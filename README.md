@@ -12,10 +12,15 @@ is unzipped and found within a "UCI HAR Dataset" in the working directory.
 Additionally, the script requires the dplyr package. 
 
 Running r_analysis() will output a table that summarises the data by calculating the means
-of all mean and standard deviation measurements for each subject and activity. The
-variables are described in the accompanying CODEBOOK file.
+of all mean and standard deviation measurements for each subject and activity. This is 
+done by combining the data from all relevant files. The variables are described in the
+accompanying CODEBOOK file.
 
 e.g.
+
 data <- r_analysis()
+
 View(data)
+
+
 saves the summary table to the 'data' variable and opens the table viewer for viewing.
